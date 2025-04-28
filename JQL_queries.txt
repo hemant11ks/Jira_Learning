@@ -1,1 +1,42 @@
-Notes
+Notes:
+
+1. 📚 What is the Jira REST API?
+The Jira REST API lets you communicate with a Jira project through HTTP methods (GET, POST, PUT, DELETE).
+Instead of using the Jira web interface manually, you can programmatically create issues, update them, search, delete, etc..
+
+It’s useful for:
+
+Automating Jira operations (like creating tasks automatically).
+
+Integrating Jira with other systems (CI/CD, Slack bots, etc.)
+
+Bulk updates or reports.
+
+ How the Jira REST API works
+HTTP Methods used:
+
+GET → Fetch data (e.g., list of issues)
+
+POST → Create something (e.g., a new issue)
+
+PUT → Update something (e.g., edit issue details)
+
+DELETE → Remove something (e.g., delete an issue)
+
+Authentication:
+
+Basic Auth (email + API Token)
+
+OAuth (more complex, for apps)
+
+Bearer Token (modern, secure)
+
+Jira requires authentication for almost all API calls.
+
+Python and Jira REST API: Basic Setup
+You can call Jira API using:
+
+requests module (manual way)
+
+OR the jira Python library (easier way)
+
